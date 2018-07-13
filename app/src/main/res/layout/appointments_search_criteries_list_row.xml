@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+        <TextView
+            android:id="@+id/tvSearchCriteria"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="center_vertical"
+            android:text="Search criteria"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/ivSearchCriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/checkmark_lightblue"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>

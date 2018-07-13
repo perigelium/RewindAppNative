@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightGrayF2"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/close_cross"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLegendAndFilterTitle"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nuovo impegno personale"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <ImageButton
+            android:id="@+id/tvSendClientPersonalTask"
+            android:layout_width="19dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/checkmark_blue"
+            android:gravity="center"
+            android:textColor="@color/blueDark"
+            android:textSize="17sp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom"
+        android:background="@color/lightGrayF2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="12dp">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Data"
+                    android:textColor="#ff777777"
+                    android:textSize="16sp"/>
+
+<!--                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>-->
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/llSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical">
+
+                <TextView
+                    android:id="@+id/tvPersonalTaskDate"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Seleziona"
+                    android:textColor="@color/gray80"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/details_arrow_right"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="12dp">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Ora"
+                    android:textColor="#ff777777"
+                    android:textSize="16sp"/>
+
+<!--                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>-->
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/llSelectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical">
+
+                <TextView
+                    android:id="@+id/tvPersonalTaskTime"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Seleziona"
+                    android:textColor="@color/gray80"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/details_arrow_right"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+        
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+        <EditText
+            android:id="@+id/etPersonalTaskPlace"
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="true"
+            android:hint="Luogo"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="#ff777777"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+        <EditText
+            android:id="@+id/etPersonalTaskDescription"
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="true"
+            android:hint="Descrizione"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="#ff777777"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

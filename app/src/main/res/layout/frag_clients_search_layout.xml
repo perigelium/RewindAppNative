@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvCloseClientsSearch"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="17dp"
+            android:gravity="center"
+            android:text="Annulla"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <SearchView
+            android:id="@+id/svNews"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginRight="17dp"
+            android:background="@color/lightGrayF5"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/lightGrayF5"
+            android:queryHint="Ricerca nei clienti"
+            android:submitBackground="@color/lightGrayF5"
+            android:textColorHint="@color/lightGrayB2">
+        </SearchView>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <FrameLayout
+        android:id="@+id/flSearchCriteriesExpandCollapse"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSearchCriteriaSelected"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="RAGIONE SOCIALE"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/ivCaretExpandCollapse"
+                android:layout_width="10dp"
+                android:layout_height="6dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/caret_symbol"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/searchCriteriesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:focusable="true"
+        android:divider="@android:color/transparent">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+        <ListView
+            android:id="@+id/searchResultsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:focusable="true"
+            android:divider="#ffcccccc">
+        </ListView>
+
+</LinearLayout>

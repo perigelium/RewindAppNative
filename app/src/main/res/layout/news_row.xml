@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/tvNewsTitle"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:maxWidth="230dp"
+                android:text="news item title"
+                android:textColor="#ff000000"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivAttachmentIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/attachmenticon"/>
+
+                <TextView
+                    android:id="@+id/tvNewsDate"
+                    fontPath="fonts/SF_UI_Text_Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="date"
+                    android:textColor="#ff808080"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvNewsSubtitle"
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:text="news item subtitle"
+            android:textColor="#ff000000"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+    </LinearLayout>
+
+</LinearLayout>

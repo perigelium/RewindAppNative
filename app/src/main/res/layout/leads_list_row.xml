@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--android:background="@drawable/listview_item_selector"-->
+
+        <LinearLayout
+            android:id="@+id/llGroupItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSearchResultCompanyName"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginTop="12dp"
+                android:maxWidth="275dp"
+                android:text="Company name"
+                android:textColor="#ff000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tvSearchResultCompanyLocation"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:maxWidth="275dp"
+                android:text="Company location"
+                android:textColor="#ff000000"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/details_arrow_right"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>
+
+    </FrameLayout>
+
+</LinearLayout>

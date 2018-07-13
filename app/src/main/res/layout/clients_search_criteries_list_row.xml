@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          fontPath="fonts/SF_UI_Text_Regular.ttf"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:maxWidth="245dp"
+          android:text="Company name"
+          android:textColor="@color/black"
+          android:textSize="14sp">
+</TextView>

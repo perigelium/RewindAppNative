@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/back_orangeicon"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="Elenco inviti"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffcccccc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:id="@+id/tvMonthAndYear"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:maxWidth="200dp"
+                android:text="Fattura mese anno"
+                android:textColor="@color/blueDark"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnConfirmInvoice"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_orange"
+                android:text="CONFERMA L'INVITO"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btnInvoiceConfirmed"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_white"
+                android:text="INVITO CONFERMATO"
+                android:textColor="@color/blueDark"
+                android:textSize="12sp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@android:color/transparent">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_weight=".1"
+        android:background="@color/white">
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:gravity="left"
+            android:text="TOTAL "
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvInvoiceTotal"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:gravity="left"
+            android:text="TOTAL "
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

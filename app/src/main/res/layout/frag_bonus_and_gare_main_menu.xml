@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fffafafa"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="12dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/menuicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "/>
+
+        </LinearLayout>
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bonus e Gare"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <FrameLayout
+        android:id="@+id/flBonus"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BONUS"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="6dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/caret_symbol"/>
+
+        </LinearLayout>
+
+<!--        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>-->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flCallToInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="INVITO A FATTURARE"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+<!--        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>-->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flRaceRank"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CLASSIFICHE GARE"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+<!--        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#ffcccccc"/>-->
+
+    </FrameLayout>
+
+
+</LinearLayout>

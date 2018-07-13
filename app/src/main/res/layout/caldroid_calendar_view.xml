@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?styleCaldroidViewLayout"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/calendar_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <Button
+            android:id="@+id/calendar_left_arrow"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="60dp"
+            style="?styleCaldroidLeftArrow" />
+
+        <TextView
+            android:id="@+id/calendar_month_year_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="?styleCaldroidMonthName"/>
+
+        <Button
+            android:id="@+id/calendar_right_arrow"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="60dp"
+            style="?styleCaldroidRightArrow"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:background="#ffcccccc"/>
+
+    <GridView
+        android:id="@+id/weekday_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <developer.alexangan.ru.rewindapp.Caldroid.InfiniteViewPager
+        android:id="@+id/months_infinite_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

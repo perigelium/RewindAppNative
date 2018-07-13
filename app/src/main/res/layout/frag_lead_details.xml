@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightGrayF2"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/back_orangeicon"/>
+
+            <TextView
+                android:id="@+id/tvReturnPageTitle"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Annulla"
+                android:textColor="@color/gray80"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvScreenTitle"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tvLeadEditAction"
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/blueDark"
+            android:textSize="17sp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="bottom"
+        android:background="@color/lightGrayF2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="bottom"
+        android:background="@color/lightGrayF2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etLeadCompanyName"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:hint="Ragione Sociale"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="#ff777777"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:text="Filiale"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etLeadSubsidiaryName"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="true"
+                    android:hint=""
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff777777"
+                    android:textSize="16sp"/>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:text="Agente"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etLeadAgentName"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="true"
+                    android:hint=""
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff777777"
+                    android:textSize="16sp"/>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Tipo contatto"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadSelectContactType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvContactType"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Data visita"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:id="@+id/llLeadSelectVisitDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadVisitDate"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/lightGrayF2"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:text="AZIENDA"
+                    android:textColor="@color/gray80"
+                    android:textSize="12sp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Indirizzo"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadSelectAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Contatto"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadSelectContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvContact"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Segnalatore"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadSelectIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvSegnalatore"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/lightGrayF2"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:text="PROFILO"
+                    android:textColor="@color/gray80"
+                    android:textSize="12sp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Q.tà Sim (Voce + dati)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadSimQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadSimQuantity"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Operatore Mobile"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadMobileOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                <TextView
+                    android:id="@+id/tvLeadMobileOperator"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="     "
+                    android:textColor="@color/gray80"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Q.tà Canali"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadChannelsQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadChannelsQuantity"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Operatore Fisso"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadWiredOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadWiredOperator"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Centralino"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadContactCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadContactCenter"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Q.tà interni"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadInteriorsQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadInteriorsQuantity"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Connettività ADSL"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadADSLconnectivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadADSLconnectivity"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Connettivitò Fibra"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadFiberConnectivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadFiberConnectivity"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/lightGrayF2"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:text="ALTRO"
+                    android:textColor="@color/gray80"
+                    android:textSize="12sp"/>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Chiusura in euro"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadClosureInEuros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadClosureInEuros"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Offerta presentata"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadOfferPresented"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadOfferPresented"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Percentuale di chiusura"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:max="4"
+                        android:progress="3"
+                        android:progressDrawable="@drawable/seekbar_progress_custom"
+                        android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:thumb="@drawable/seekbar_thumb_shape"
+                        android:tickMark="@drawable/seekbar_tickmark_shape"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp">
+
+                        <TextView
+                            fontPath="fonts/SF_UI_Text_Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_weight="1"
+                            android:text="0%"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            fontPath="fonts/SF_UI_Text_Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:text="    25%"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            fontPath="fonts/SF_UI_Text_Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text="50% "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            fontPath="fonts/SF_UI_Text_Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text="75%    "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            fontPath="fonts/SF_UI_Text_Regular.ttf"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text="100%"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Data ricontatto"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadRecontactDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadRecontactDate"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Data scadenza"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadExpiryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadExpiryDate"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp">
+
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="Note"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llLeadNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvLeadNote"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:text="     "
+                        android:textColor="@color/gray80"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/details_arrow_right"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

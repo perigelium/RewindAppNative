@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="12dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/menuicon"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvScreenTitle"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Appuntamenti"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/llOpenAppointmentsSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/searchicon_black"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="0dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAppointments"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="17dp"
+            android:layout_weight=".5"
+            android:background="@drawable/button_blue_left"
+            android:text="Appuntamenti"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnIntornoATe"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="17dp"
+            android:layout_weight=".5"
+            android:background="@drawable/button_white_right"
+            android:text="Intorno a te"
+            android:textAllCaps="false"
+            android:textColor="@color/blueDark"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <!--    <LinearLayout
+            android:id="@+id/map"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"/>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9">
+
+        <LinearLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabListMode"
+            android:layout_width="84dp"
+            android:layout_height="87dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/button_appointments_list_mode_selector"
+            app:backgroundTint="@android:color/transparent"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:fabSize="normal"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flLegendAndFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/map_filter"/>
+
+            <TextView
+                android:id="@+id/tvLegendAndFilter"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="LEGENDA"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

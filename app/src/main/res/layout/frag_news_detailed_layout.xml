@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/back_orangeicon"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="Elenco news"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:id="@+id/tvNewsTitle"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="245dp"
+                android:text="news item title"
+                android:textColor="#ff000000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvNewsDate"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="date"
+                android:textColor="#ff808080"
+                android:textSize="12sp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvNewsSubtitle"
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:text="news item subtitle"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:maxWidth="245dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_marginBottom="18dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvAttachment"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_blue"
+                    android:minWidth="375dp"
+                    android:text="     ALLEGATO"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginLeft="130dp"
+                    android:background="@drawable/attachmentbutton_icon"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNewsBodyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNewsBodyTitle"
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:maxWidth="230dp"
+                android:text="news item title"
+                android:textColor="#ff000000"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tvNewsBodySubtitle"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:text="news item subtitle"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:lineSpacingExtra="7dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNewsDetailedText"
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:text=""
+            android:gravity="left"
+            android:lineSpacingExtra="7dp"
+            android:textColor="#ff000000"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:baselineAligned="false">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnRaceDetails"
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_blue"
+                    android:minWidth="375dp"
+                    android:text="DETTAGLIO PRATICHE"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:text="Rewind."
+            android:gravity="left"
+            android:textColor="#ff000000"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

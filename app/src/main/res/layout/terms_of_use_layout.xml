@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/back_orangeicon"/>
+
+                <TextView
+                    fontPath="fonts/SF_UI_Text_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:text="Profilo"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/lightGrayCC"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="22dp"
+                android:text="Termini di utilizzo"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxWidth="340dp"
+                android:text="@string/TermsOfUseText"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="19dp"
+                android:text="Privacy"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxWidth="340dp"
+                android:text="@string/privacyText"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:textSize="14sp"
+                android:id="@+id/textView2"/>
+
+            <TextView
+                android:id="@+id/tvLinkToPrivacy"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxWidth="340dp"
+                android:text="@string/linkToPrivacy"
+                android:textColor="@color/blueDark"
+                android:textSize="14sp"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="19dp"
+                android:text="Credits"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxWidth="340dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/creditsText"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:textSize="14sp"/>
+
+<!--            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">-->
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="11dp"
+                android:text="Development team: "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/developmentTeamText"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="7dp"
+                android:textSize="14sp"/>
+
+
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="43dp"
+                android:src="@drawable/rewindlogo"/>
+
+            <TextView
+                android:id="@+id/tvLinkToCompany"
+                fontPath="fonts/SF_UI_Text_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="19dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/linkToCompany"
+                android:textColor="@color/blueDark"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

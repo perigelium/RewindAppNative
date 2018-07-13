@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="12dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/menuicon"/>
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNewsTitle"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="News"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tvCloseSearchView"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:layout_marginRight="17dp"
+            android:text="Annulla"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/llOpenSearchView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/searchicon_black"/>
+
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/svNews"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorPrimary"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/lightGrayF5"
+            android:queryHint="@string/SearchOverNews"
+            android:submitBackground="@color/lightGrayF5"
+            android:textColorHint="@color/lightGrayB2"
+            android:visibility="gone">
+        </SearchView>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <ScrollView
+        android:id="@+id/scvNews"
+        android:layout_width="match_parent"
+        android:background="#fffafafa"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <developer.alexangan.ru.rewindapp.ViewOverrides.ListViewEx
+                android:id="@id/android:list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="@color/lightGrayCC"
+                android:focusable="true">
+            </developer.alexangan.ru.rewindapp.ViewOverrides.ListViewEx>
+
+            <LinearLayout
+                android:id="@+id/llAdd10NewsToList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:baselineAligned="false"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/scaricaicon"/>
+
+                    <Button
+                        android:id="@+id/btnAdd10NewsToList"
+                        fontPath="fonts/SF_UI_Text_Regular.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="end"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/button_white"
+                        android:minWidth="375dp"
+                        android:text="   SCARICA LE 10 NEWS PRECEDENTI"
+                        android:textColor="@color/blueDark"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:caldroid="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:drawable="@drawable/white_dot_in_orange_rect_shape" android:state_pressed="false" caldroid:state_date_today="true"/>
+    <item android:drawable="@color/white" android:state_pressed="false" caldroid:state_date_today="false"/>
+<!--    <item android:drawable="@color/white" android:state_pressed="false" caldroid:state_date_prev_next_month="true"/>
+    <item android:drawable="@color/white" android:state_pressed="false" caldroid:state_date_prev_next_month="false"/>
+    <item android:drawable="@drawable/caldroid_disable_cell" caldroid:state_date_disabled="true"/>-->
+    <item android:drawable="@color/blueDark" android:state_pressed="false" caldroid:state_date_selected="true"/>
+    <item android:drawable="@color/itemSelected" android:state_pressed="true"/>
+
+</selector>

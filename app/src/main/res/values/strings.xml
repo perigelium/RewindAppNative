@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Rewind 2.0</string>
+
+    <string name="GetAltitudeFailed">Altitudine non identificata</string>
+    <string name="MapAppIsAbsent">Manca un\'applicazione mappe</string>
+    <string name="Saved">Salvato</string>
+    <string name="DownloadingDataPleaseWait">Download dati in corso, attendere...</string>
+    <string name="SetDateTimeFailed">Impostazione data e ora non riuscita</string>
+    <string name="TransmittingDataPleaseWait">Trasmissione dati in corso, attendere...</string>
+    <string name="CheckInternetConnection">Verifica connessione Internet</string>
+    <string name="OfflineModeShowLoginScreenQuestion">Sei offline,\n per connetterti fai login</string>
+    <string name="OfflineMode">Sei offline</string>
+    <string name="DateTimeSetSuccessfully">Data e ora è stato impostato</string>
+    <string name="VisitHasCancelled">Il sopralluogo è stato annullato</string>
+    <string name="NotApplicable">Non applicabile</string>
+    <string name="LoginOrPasswordNotValid">Utente o password non valido</string>
+    <string name="DatabaseError">Database error</string>
+    <string name="LoginFailedCheckInternetConnection">Login non riuscito, controlla la connessione ad internet</string>
+    <string name="InvalidPassword">Password non valido.</string>
+    <string name="InvalidLogin">Utente non valido.</string>
+    <string name="ListVisitsReceiveFailed">Elenco sopralluoghi non ricevuto</string>
+    <string name="ServerError">Server error</string>
+    <string name="SelectTechPlease">Seleziona il tecnico</string>
+    <string name="InsertNameAndSurnameFirst">Inserisci il nome e cognome</string>
+    <string name="ServerAnswerNotReceived">Server non risponde</string>
+    <string name="ListVisitsIsEmpty">Elenco dei sopralluoghi è vuoto</string>
+    <string name="ReportSent">Rapporto inviato</string>
+    <string name="SendingImageFailed">Invio immagine non riuscito</string>
+    <string name="SendingReportFailed">Invio rapporto non riuscito</string>
+    <string name="LoadingImagesInProgress">Caricamento immagini in corso ...</string>
+    <string name="PreparingImageForDisplaying">Visualizzazione in corso...</string>
+    <string name="UnableToAddImage">Impossibile aggiungere immagine</string>
+    <string name="Unknown">Sconosciuto</string>
+    <string name="ReportNotAlreadySent">Rapporto non è stato ancora inviato</string>
+    <string name="TechnicianAddedSelectFromListBelow">"Il tecnico è stato aggiunto. \nPuoi selezionarlo qui sotto e cliccare sul pulsante \"Seleziona\""</string>
+    <string name="RegisterAnNewTechnician">Aggiungi un nuovo tecnico</string>
+    <string name="ReceivedDataError">Error in dato ricevuto dal server</string>
+    <string name="ApplicationUpdateFailed">Aggiornamento di applicazione non riuscito</string>
+    <string name="ApplicationUpdateSucceeded">Aggiornamento di applicazione completato</string>
+    <string name="VisitsFree">Sopralluoghi da fissare</string>
+    <string name="VisitsOfToday">Sopralluoghi di oggi</string>
+    <string name="VisitsComing">Prossimi sopralluoghi</string>
+    <string name="ComingVisitsList">Elenco dei prossimi sopralluoghi</string>
+    <string name="ReportDetailed">Dettagli di rapporto inviato</string>
+    <string name="NullString"></string>
+    <string name="ReadOnlyMode">Modalità di sola lettura</string>
+    <string name="SetDateAndTimeFirst">Imposta la data e l\'ora prima</string>
+    <string name="YouCanEditYourOwnReportsOnly">È possibile modificare solo i propri compilazioni</string>
+    <string name="MyVisitsList">I miei sopralluoghi</string>
+    <string name="FreeVisits">I sopralluoghi da fissare</string>
+    <string name="Notifications">Notifiche</string>
+    <string name="CompletedCompilations">Compilazioni completate</string>
+    <string name="Settings">Impostazioni</string>
+    <string name="InWorkCompilations">Compilazioni in corso</string>
+    <string name="YouCanEditActualReportsOnly">È possibile modificare solo i compilazioni attuale</string>
+    <string name="PhotosSavingFailedTryLater">Salvare gli immagini non riuscito, riprova, per favore</string>
+    <string name="RemindedVisits">Sopralluoghi sollecitati</string>
+    <string name="VisitsReportsOverdue">Sopralluoghi/Rapporti in ritardo</string>
+    <string name="ComingVisits">Prossimi sopralluoghi</string>
+    <string name="TimeNotSetVisits">Sopralluoghi da fissare</string>
+    <string name="RemindedCompilations">Compilazioni sollecitati</string>
+    <string name="NotInitiatedCompilation">Rapporto da compilare</string>
+    <string name="CompletedNotSentReport">Rapporto compilato ma non inviato</string>
+    <string name="NoCompletedCompilation">Compilazione in corso del rapporto</string>
+    <string name="SearchOverNews">Ricerca nelle news...</string>
+  <string name="Search">Ricerca...</string>
+    <string name="OfflineModeSeekInLocalNewsOnly">Modalità offline, cercando solo delle noviti locali.</string>
+    <string name="ZeroReportID">Rapporto ID uquale zero</string>
+  <string name="DownloadAvatarFailed">Ricevere di avatar non riuscito</string>
+  <string name="TermsOfUse">Condizioni d\'uso</string>
+  <string name="TermsOfUseText">
+Rewind app è di proprietà esclusiva di Rewind
+srl (Via Fratelli Cervi 80 - 42124 Reggio Emilia -
+P.IVA 02406910352).
+\n\nL\'app è concessa in uso esclusivamente agli
+agenti di Rewind srl per la durata della loro
+collaborazione con Rewind srl stessa.
+\n\nQualsiasi altro utilizzo è esplicitamente vietato.
+Rewind srl potrà aggiornare e modiﬁcare la
+presente app in qualsiasi momento, così come
+autorizzare o bloccare insindacabilmente
+l\'accesso all\'app a qualsiasi utente.</string>
+  <string name="privacyText">Tutti i dati e le informazioni relative a operatori,
+clienti e pratiche presenti nella Rewind App
+sono da ritersi strettamente conﬁdenziali e non divulgabili a terzi.
+\n\nLa divulgazione di tali dati a soggetti terzi
+senza previa autorizzazione si conﬁgura come
+trattamento illecito di dati personali e/o
+violazione degli obblighi di riservatezza. \n\nConsulta l\'informativa completa sulla privacy:</string>
+  <string name="creditsText">Rewind App è stata sviluppata da Future
+Monitor srl per conto di Rewind srl avvalendosi
+della collaborazione di BluDelego.</string>
+  <string name="linkToPrivacy">www.rewindtelecomunicazioni.it/privacy/</string>
+  <string name="linkToCompany">www.rewindtelecomunicazioni.it</string>
+  <string name="developmentTeamText">
+Alexandr Angan\n
+Stefano Benatti\n
+Nichita Cerempei\n
+Fabio Cioni\n
+Dumitru Cotofana\n
+Radu Dobrostomat\n
+Alexandru Gheorghianu\n
+Luca Pattocchio\n
+Damiano Tipaldi
+</string>
+  <string name="AttachmentIsAccessibleOnlineOnly">Il attachment è consultabile solo online</string>
+  <string name="DetailsIsAccessibleOnlineOnly">Il dettaglio è consultabile solo online</string>
+  <string name="NoNewsCorrespondSearchCrtiteria">Nessuna news corrisponde ai criteri di ricerca</string>
+  <string name="ChooseAppToOpenWith">Scegli un\'applicazione d\'aprire con:</string>
+  <string name="NoAppForThisFileType">Nessun applicazione per questo tipo di file.</string>
+  <string name="NoDataForThisMonth">Nessun dato per questo mese</string>
+  <string name="NoDataForThisYear">Nessun invito presente per il periodo selezionato</string>
+  <string name="AppNameAndVersion">Rewind - Versione 2.0</string>
+  <string name="InvitationConfirmationFailed">La conferma dell\'invito non è riuscita</string>
+  <string name="RaceRankTitle">Classifiche gare</string>
+  <string name="News">News</string>
+  <string name="LegendAndFilter">LEGENDA E FILTRO</string>
+  <string name="LegendAndFilterNoCaps">Legenda e filtro</string>
+  <string name="Client">Cliente</string>
+  <string name="MapPreparationInProgressPleaseWait">Preparazione di mappe in corso, attendere...</string>
+  <string name="NoMailClientInstalled">Nessun client di posta installato.</string>
+  <string name="MemoAddedSuccessfully">Memo è stato aggiunto con successo.</string>
+  <string name="MemoAddingFailed">L\'aggiunta di memo non è riuscita</string>
+  <string name="LocationServiceNotEnabled">Il servizio di localizzazione non è abilitato.</string>
+
+</resources>

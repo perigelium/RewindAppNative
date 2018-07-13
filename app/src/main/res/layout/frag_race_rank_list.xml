@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffffff"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="12dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/menuicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="17dp"
+                android:text="     "/>
+
+        </LinearLayout>
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bonus e Gare"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <FrameLayout
+        android:id="@+id/flListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/SF_UI_Text_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CLASSIFICHE GARE"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="6dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/caret_upside_down"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:text="#"
+            android:textColor="@color/gray80"
+            android:textSize="12sp"/>
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="35dp"
+            android:text="AGENTE"
+            android:textColor="@color/gray80"
+            android:textSize="12sp"/>
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:text="PUNTI"
+            android:textColor="@color/gray80"
+            android:textSize="12sp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffdddddd"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_gravity="bottom"
+        android:background="#ffeeeeee"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_gravity="bottom"
+        android:background="#fffafafa"/>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="#ffffffff"
+        android:choiceMode="singleChoice"
+        android:divider="@color/lightGrayCC"
+        android:focusable="true">
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/flMonthSlider"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffffff"
+        android:backgroundTint="@color/blueDark"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flPrevDate"
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="90dp">
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/date_left"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvMonthSelected"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <FrameLayout
+            android:id="@+id/flNextDate"
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="90dp">
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/date_right"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

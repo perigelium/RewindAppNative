@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvReturn"
+            fontPath="fonts/SF_UI_Text_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="17dp"
+            android:gravity="center"
+            android:text="Annulla"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <SearchView
+            android:id="@+id/svAppointments"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginRight="17dp"
+            android:background="@color/lightGrayF5"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/lightGrayF5"
+            android:queryHint="Cerca negli appuntamenti"
+            android:submitBackground="@color/lightGrayF5"
+            android:textColorHint="@color/lightGrayB2">
+        </SearchView>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            fontPath="fonts/SF_UI_Text_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="Resultati di ricerca"
+            android:textColor="@color/gray80"
+            android:textSize="14sp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#ffcccccc"/>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:focusable="true"
+        android:divider="@android:color/transparent">
+    </ListView>
+
+</LinearLayout>
